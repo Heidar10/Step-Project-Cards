@@ -1,4 +1,4 @@
-import Requests from "./Requests.js";
+import Requests from "./requests.js";
 import { headerBtn } from "./main.js";
 import {
     VisitDentist,

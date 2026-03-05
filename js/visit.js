@@ -1,4 +1,4 @@
-import Requests from "./Requests.js";
+import Requests from "./requests.js";
 import { cardContainer } from "./modal.js";
 import Modal from "./modal.js";
 
