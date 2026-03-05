@@ -1,6 +1,6 @@
-import Modal from "./Modal.js";
-import { Cards } from "./Visit.js";
-import Filter from "./Filter.js";
+import Modal from "./modal.js";
+import { Cards } from "./visit.js";
+import Filter from "./filter.js";
 
 export const headerBtn = document.querySelector(".header-btn");
 
