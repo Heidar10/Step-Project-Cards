@@ -1,25 +1,24 @@
-import Modal from "./Modal.js"
-import { Cards } from './Visit.js';
-import Filter from "./Filter.js";
+import Modal from "./modal.js";
+import { Cards } from "./visit.js";
+import Filter from "./filter.js";
 
-export const headerBtn = document.querySelector('.header-btn')
+export const headerBtn = document.querySelector(".header-btn");
 
-const filter = document.querySelector('.filter')
-filter.addEventListener('submit', (event) => {
-    event.preventDefault()
-    new Filter().makeFilter()
-})
+const filter = document.querySelector(".filter");
+filter.addEventListener("submit", (event) => {
+    event.preventDefault();
+    new Filter().makeFilter();
+});
 
-if (localStorage.getItem('token')) {
-    headerBtn.textContent = 'Створити візит'
-    new Cards().renderAll()
+if (localStorage.getItem("token")) {
+    headerBtn.textContent = "Створити візит";
+    new Cards().renderAll();
 }
 
-headerBtn.addEventListener('click', () => {
+headerBtn.addEventListener("click", () => {
     if (headerBtn.textContent === "Вхід") {
-        new Modal(document.body).enter()     
-    } else{
-        new Modal(document.body).visitCreateNew()
+        new Modal(document.body).enter();
+    } else {
+        new Modal(document.body).visitCreateNew();
     }
-})
-
+});
