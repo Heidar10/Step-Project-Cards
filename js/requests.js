@@ -1,12 +1,11 @@
 const URL = "https://ajax.test-danit.com/api/v2/cards/";
 
 export default class Requests {
-  static enter(object, csrfToken) {
+  static enter(object) {
     return fetch(URL + "login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "X-CSRF-Token": csrfToken,
       },
       body: JSON.stringify(object),
     }).then((response) => {
